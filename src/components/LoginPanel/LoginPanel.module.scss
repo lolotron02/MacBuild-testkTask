@@ -1,0 +1,49 @@
+.component {
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: #fff;
+    color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(207, 226, 225);
+
+    * {
+        user-select: none;
+    }
+
+    &>* {
+        margin-bottom: 25px;
+    }
+
+    .logButton {
+        width: 100%;
+        font-size: 20px;
+        padding: 6px 0px;
+        cursor: pointer;
+        background-color: var(--red);
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        transition: .5s ease background-color;
+        &:hover{
+            background-color: #f64e4e;
+        }
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: var(--darkBlue);
+            font-weight: 700;
+            transition: .5s ease color;
+            &:hover{
+                color: var(--aquaText);
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.component{
+    border-top-left-radius: 6px;    
+    border-bottom-left-radius: 6px;
+    background-color: #EDF2F7;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    border-right: none;
+    color: var(--darkBlue);
+}
