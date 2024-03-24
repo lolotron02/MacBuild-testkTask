@@ -1,7 +1,8 @@
 import { Heebo } from "next/font/google";
 import "./globals.scss";
+import { Providers } from "../store/Provider";
 
-const heebo = Heebo({ subsets: ["latin"], weight: ["400","700"] });
+const heebo = Heebo({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={heebo.className}>{children}</body>
+      <body className={heebo.className}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }

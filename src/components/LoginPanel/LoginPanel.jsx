@@ -8,7 +8,6 @@ import InputGroup from '../InputComponents/InputGroup/InputGroup'
 import InputLeftElement from '../InputComponents/InputLeftElement/InputLeftElement'
 
 import c from './LoginPanel.module.scss'
-import InputRightElement from "../InputComponents/InputRightElement/InputRightElement";
 import Link from "next/link";
 
 function LoginPanel() {
